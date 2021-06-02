@@ -1,7 +1,8 @@
-import { Personaje } from "./Personaje";
+import { Personaje } from "./personaje";
 
 class Escudero extends Personaje {
   senyor;
+
   pelotismo;
 
   constructor(nombre, familia, edad, serie, senyor, pelotismo) {
