@@ -10,6 +10,7 @@ module.exports = {
   parser: "babel-eslint",
   rules: {
     "no-shadow": "off",
+    "lines-between-class-members": "off",
     "no-console": "off",
     "arrow-parens": "off",
     "no-unused-vars": "off",

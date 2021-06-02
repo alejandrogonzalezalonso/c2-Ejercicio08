@@ -5,14 +5,7 @@ export default class Escudero extends Personaje {
 
   pelotismo;
 
-  constructor(
-    nombre,
-    familia,
-    edad,
-    serie = "Juego de Tronos",
-    senyor,
-    pelotismo
-  ) {
+  constructor(nombre, familia, edad, serie, senyor, pelotismo) {
     super(nombre, familia, edad, serie);
     this.senyor = senyor;
     if (pelotismo < 1) {

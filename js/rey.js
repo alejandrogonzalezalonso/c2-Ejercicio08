@@ -3,7 +3,7 @@ import { Personaje } from "./personaje.js";
 export default class Rey extends Personaje {
   anyosReinado;
 
-  constructor(nombre, familia, edad, serie = "Juego de Tronos", anyosReinado) {
+  constructor(nombre, familia, edad, serie, anyosReinado) {
     super(nombre, familia, edad, serie);
     this.nombre = nombre;
     this.familia = familia;
