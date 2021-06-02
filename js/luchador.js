@@ -3,7 +3,7 @@ import { Personaje } from "./personaje.js";
 export default class Luchador extends Personaje {
   destreza;
 
-  constructor(nombre, familia, edad, serie = "Juego de Tronos", destreza) {
+  constructor(nombre, familia, edad, serie, destreza) {
     super(nombre, familia, edad, serie);
     this.nombre = nombre;
     this.familia = familia;
