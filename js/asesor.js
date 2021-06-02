@@ -1,4 +1,4 @@
-import { Personaje } from "./Personaje";
+import { Personaje } from "./personaje";
 
 class Asesor extends Personaje {
   senyor;
