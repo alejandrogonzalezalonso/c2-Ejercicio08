@@ -1,6 +1,10 @@
 const mensajePersonajes = (arrayPersonajes) =>
   arrayPersonajes.map((personaje) => personaje.comunica());
 
-const main = () => {
-  return;
-};
+const seriePersonaje = (arrayPersonajes) =>
+  arrayPersonajes.map(
+    (personaje) =>
+      `${personaje.nombre} pertenece a la serie: ${personaje.serie}`
+  );
+
+const main = () => {};
