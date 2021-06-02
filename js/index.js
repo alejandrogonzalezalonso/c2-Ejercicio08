@@ -68,8 +68,24 @@ const creaPersonajes = () => {
 };
 const main = () => {
   const personajesGOT = creaPersonajes();
+  
+  
 
   console.log(personajesGOT);
+  
 };
 
+const personajesEdad = (personajes) => {
+  const personajesOrdenados= [...personajes];
+  return personajesOrdenados.sort(
+    (
+      {  
+        personajes: { edad: edadMayor },
+      },
+      {
+        personajes: { edad: edadMenor },
+      }
+    ) => edadMayor - edadMenor
+  );
+};
 main();
