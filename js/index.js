@@ -68,6 +68,8 @@ const creaPersonajes = () => {
 };
 const main = () => {
   const personajesGOT = creaPersonajes();
+
+  console.log(personajesGOT);
 };
 
 main();

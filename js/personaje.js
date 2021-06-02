@@ -1,16 +1,20 @@
+// eslint-disable-next-line import/prefer-default-export
 export class Personaje {
   nombre;
   familia;
   edad;
-  estado = "Vivo";
   serie;
+  estado = "Vivo";
+
   comunicar() {
     return "";
   }
+
   morir() {
-    this.estado = muerto;
+    this.estado = "muerto";
   }
-  constructor(nombre, familia, edad, estado, serie) {
+
+  constructor(nombre, familia, edad, serie, estado = "Vivo") {
     this.nombre = nombre;
     this.familia = familia;
     this.edad = edad;
