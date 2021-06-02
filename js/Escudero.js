@@ -1,11 +1,18 @@
-import { Personaje } from "./personaje";
+import { Personaje } from "./personaje.js";
 
-class Escudero extends Personaje {
+export default class Escudero extends Personaje {
   senyor;
 
   pelotismo;
 
-  constructor(nombre, familia, edad, serie, senyor, pelotismo) {
+  constructor(
+    nombre,
+    familia,
+    edad,
+    serie = "Juego de Tronos",
+    senyor,
+    pelotismo
+  ) {
     super(nombre, familia, edad, serie);
     this.senyor = senyor;
     if (pelotismo < 1) {
