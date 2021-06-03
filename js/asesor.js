@@ -8,5 +8,5 @@ export default class Asesor extends Personaje {
     this.senyor = senyor;
   }
 
-  comunica = () => "No sé por qué, pero creo que voy a morir pronto";
+  comunicar = () => "No sé por qué, pero creo que voy a morir pronto";
 }
