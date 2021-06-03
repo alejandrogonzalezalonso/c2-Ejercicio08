@@ -8,13 +8,19 @@ const seriesConstantes = {
 };
 
 const mensajePersonajes = (arrayPersonajes) =>
-  arrayPersonajes.map((personaje) => personaje.comunica());
+  arrayPersonajes.map((personaje) => personaje.comunicar());
 
 const seriePersonaje = (arrayPersonajes) =>
   arrayPersonajes.map(
     (personaje) =>
       `${personaje.nombre} pertenece a la serie: ${personaje.serie}`
   );
+
+const consolearSeriesPersonajes = (arrayPersonajes) => {
+  for (const personaje of arrayPersonajes) {
+    console.log(personaje.serie);
+  }
+};
 
 const creaPersonajes = () => {
   const personajes = [];
@@ -68,23 +74,21 @@ const creaPersonajes = () => {
 };
 const main = () => {
   const personajesGOT = creaPersonajes();
-  
-  
-
   console.log(personajesGOT);
-  
+
+  consolearSeriesPersonajes(personajesGOT);
+
+  for (const mensaje of mensajePersonajes(personajesGOT)) {
+    console.log(mensaje);
+  }
 };
 
 const personajesEdad = (personajes) => {
-  const personajesOrdenados= [...personajes];
+  const personajesOrdenados = [...personajes];
   return personajesOrdenados.sort(
     (
-      {  
-        personajes: { edad: edadMayor },
-      },
-      {
-        personajes: { edad: edadMenor },
-      }
+      { personajes: { edad: edadMayor } },
+      { personajes: { edad: edadMenor } }
     ) => edadMayor - edadMenor
   );
 };

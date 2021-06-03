@@ -17,5 +17,5 @@ export default class Escudero extends Personaje {
     }
   }
 
-  comunica = () => "Soy un loser";
+  comunicar = () => "Soy un loser";
 }
